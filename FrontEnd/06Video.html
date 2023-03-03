@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {}
+        body {}
+        header {}
+        header>nav {}
+        header>nav>ul {
+            list-style : none;
+            padding : 0px;
+            display:flex;
+            justify-content: space-around;
+            /* border : 1px solid; */
+        }
+        header>nav>ul>li {
+            /* border : 1px solid; */
+           
+        }
+        header>nav>ul>li>a { 
+            display:block;            
+            width : 120px;
+            height:30px;
+            border : 1px solid;
+            background-color : white;
+        }
+        
+        header>nav>ul>li>ul {
+            list-style : none;
+            padding : 0px;
+            background-color:orange;
+            display:none;
+        }
+        header>nav>ul>li>ul>li {
+        
+        }
+
+        /* 1depth li hover시 서브메뉴 표시 */
+        /* header>nav>ul>li:hover .submenu{
+            display:block;
+        } */
+        /* 1depth ul hover시 서브메뉴 표시 */
+        header>nav>ul:hover .submenu{
+            display:block;
+            
+        }
+
+        .mainbody{
+            position:absolute;
+            top:0px;
+            z-index:-1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        
+        <nav>
+            <ul>
+                <li class="mainmenu">
+                    <a href="">1Depth</a>
+                    <ul class="submenu">
+                        <li>2Depth</li>
+                        <li>2Depth</li>
+                        <li>2Depth</li>
+                    </ul>
+                </li>
+                <li  class="mainmenu">
+                    <a href="">1Depth</a>
+                    <ul  class="submenu">
+                        <li>2Depth</li>
+                        <li>2Depth</li>
+                        <li>2Depth</li>
+                    </ul>                    
+                </li>
+                <li  class="mainmenu">
+                    <a href="">1Depth</a>
+                    <ul  class="submenu">
+                        <li>2Depth</li>
+                        <li>2Depth</li>
+                        <li>2Depth</li>
+                    </ul>
+                </li>
+                <li  class="mainmenu">
+                    <a href="">1Depth</a>
+                    <ul  class="submenu">
+                        <li>2Depth</li>
+                        <li>2Depth</li>
+                        <li>2Depth</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="mainbody">
+        <video src="./video.mp4" controls autoplay muted loop style="width:100vw;height:100vh">
+        </video>
+    </section> 
+
+
+
+</body>
+
+</html>

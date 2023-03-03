@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <table border="1" width="400px" height="400px" align="center">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table> -->
+
+    <!-- emmet 단축키 -->
+    <!-- table>tr*3>td*3{TEST$}-->
+
+    <!--
+        table의 sementic 태그
+            thead   :헤더영역(상단)
+            tbody   :바디영역(중간)
+            tfoot   :푸터영역(마지막)
+        table의 제목설정
+            caption 태그
+     -->
+    <style>
+        table {
+            width: 400px;
+            height: 400px;
+            border: 1px solid;
+        }
+
+        #tbl {
+            background-color: gray;
+        }
+
+        table {}
+        /* caption */
+        table>caption{}
+
+        /* thead */
+        table>thead{}
+        table>thead>tr>td{     
+            border: 1px solid rgb(16, 188, 0);
+            padding: 50px;
+            color: white;
+        }
+        table>thead>tr>th{
+
+        }
+        /* tbody */
+        table>tbody {}
+        table>tbody>tr {}
+
+        table>tbody>tr>td {
+            border: 1px solid red;
+            padding: 50px;
+            color: white;
+        }
+        /* tfoot */
+        table>tfoot{}
+        table>tfoot>tr{}
+        table>tfoot>tr>td{
+            border: 1px solid rgb(202, 184, 46);
+            padding: 50px;
+            color: white;
+        }
+
+        </style>
+
+    <table id="tbl">
+        <caption>테이블제목</caption>
+        <tfoot>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+
+    </table>
+
+
+</body>
+
+</html>
