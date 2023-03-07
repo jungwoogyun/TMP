@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+            border: 1px solid gray;
+       } 
+       .parent{
+        width : 700px;
+        height : 700px;
+        background-color: lightblue;
+        padding:10px 20px 30px 40px;
+       }
+       .son{
+        background-color:orange;
+        border-top : 1px solid blue;
+        border-right : 2px solid blue;
+        border-bottom : 3px solid blue;
+        border-left : 4px solid blue;
+        margin:20px 40px;
+        padding:15px 30px;
+       }
+    </style>
+</head>
+<body>
+    <!-- 
+        div태그를 선택하여 기본 border를 1px solid gray 설정
+        parent 클래스의 content width:700px height : 700px background-color : lightblue로 설정
+        parent 의 padding  을 top,right,bottom,left를 순서로 10,20,30,40설정
+        son 클래스의 background를 orange로 설정 
+        son 클래스의 border를 top,right,bottom,left를 순서로 1,2,3,4px solid blue로 설정
+        son 클래스의 요소 각각 margin을 top,bottom을 20px , left,right 를 40px으로 설정
+        son 클래스의 padding 을 위아래 15px 좌우 30px설정
+     -->
+
+    <div class="parent">
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+    </div>
+
+</body>
+</html>

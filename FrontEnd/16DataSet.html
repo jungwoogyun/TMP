@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        태그 내에 특정 데이터 단위를 저장하기 위한 속성
+        HTML5에서 새로 확장된 속성
+        data-* 으로 표기한다
+     -->
+    <div data-profile="대구광역시 달서구 "></div>
+    <div data-profile="user1234"></div>
+
+
+    <script>
+       const els =   document.querySelectorAll('div');
+       console.log(els);
+       els.forEach( el=>{ console.log(el.dataset.profile);} );
+    </script>
+
+
+</body>
+</html>

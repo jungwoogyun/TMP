@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 글꼴 링크 cdn -->
+    <!-- 네이버 폰트 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/NanumGaRamYeonGgoc.css" rel="stylesheet">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face
+        {
+            font-family:"독도는우리땅";
+            src : url("font/Dokdo-Regular.ttf");
+            font-weight:700;
+            font-style :normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        font-family : 글꼴1,글꼴2,....글꼴계열
+        //왼쪽부터 차례대로 브라우저가 지원하는 글꼴을 적용
+        //바탕체 계열 : Serif
+
+        //고딕체 계열 : sans-Serif
+
+        //필기체 계열 : cursive
+     -->
+     <div style="font-family:'돋움','궁서체',sans-serif">HELLO WORLD</div>
+     <div style="font-family:'궁서체'">HELLO WORLD</div>
+     <div style="font-family:sans-serif">HELLO WORLD</div>
+     <div style="font-family:cursive">HELLO WORLD</div>
+     <div>HELLO WORLD</div>
+     <hr>
+     <!-- 외부 폰트 cdn link -->
+     <div style="font-family: 'NanumGaRamYeonGgoc'">HELLO WORLD</div>
+     <div style="font-family: 'Dongle', sans-serif;">HELLO WORLD</div>
+
+
+     <!-- 다운받은 Local font 사용 -->
+     <div style="font-family: '독도는우리땅', sans-serif;">HELLO WORLD</div>
+
+     
+
+</body>
+</html>
