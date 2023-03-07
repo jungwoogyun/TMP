@@ -30,11 +30,11 @@
         <form action="" >
             <div class="m-2">
                 <label for="">EMAIL</label>
-                <input type="email" class="form-control">
+                <input type="email" class="form-control" required>
             </div>
             <div class="m-2">
                 <label for="">Password</label>
-                <input type="text" class="form-control" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,16}" oninvalid="this.setCustomValidity('최소 8 자 및 최대 16 자, 대문자 하나 이상, 소문자 하나, 숫자 하나 및 특수 문자 하나 이상 입력하세요..')" onchange="this.setCustomValidity('')">
+                <input type="text" class="form-control" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,16}" oninvalid="this.setCustomValidity('최소 8 자 및 최대 16 자, 대문자 하나 이상, 소문자 하나, 숫자 하나 및 특수 문자 하나 이상 입력하세요..')" onchange="this.setCustomValidity('')" required>
             </div>
             <div class="m-2">
                 <label for="">Name</label>
